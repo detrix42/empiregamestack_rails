@@ -90,4 +90,9 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Allow requests from subdomains like `www.product.com` and
+  # `beta1.product.com`.
+  Rails.application.config.hosts << /.*\.empiregamestack\.com/
+
 end
