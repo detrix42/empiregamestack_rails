@@ -1,0 +1,131 @@
+@import 'colors';
+// ========================================================
+// global flex styles
+@mixin dflexrow {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin dflexcol {
+  display: flex;
+  flex-direction: column;
+}
+
+.behidden {
+  display: none;
+}
+
+.dflex {
+  display: flex;
+}
+
+.dflex-row {
+  @include dflexrow;
+}
+
+.dflex-col {
+  @include dflexcol;
+}
+
+// display flex for a row with justify content
+.dflexr-jcs {
+  @include dflexrow;
+  justify-content: flex-start;
+}
+
+.dflexr-jce {
+  @include dflexrow;
+  justify-content: flex-end;
+}
+
+.dflexr-jcc {
+  @include dflexrow;
+  justify-content: center;
+}
+
+.dflexr-jcsa {
+  @include dflexrow;
+  justify-content: space-around;
+}
+
+.dflexr-jcsb {
+  @include dflexrow;
+  justify-content: space-between;
+}
+
+.dflexr-jcse {
+  @include dflexrow;
+  justify-content: space-evenly;
+}
+
+// display flex for a col with justify contents
+.dflexc-jcs {
+  @include dflexcol;
+  justify-content: flex-start;
+}
+
+.dflexc-jce {
+  @include dflexcol;
+  justify-content: flex-end;
+}
+
+.dflexc-jcc {
+  @include dflexcol;
+  justify-content: center;
+}
+
+.dflexc-jcsa {
+  @include dflexcol;
+  justify-content: space-around;
+}
+
+.dflexc-jcsb {
+  @include dflexcol;
+  justify-content: space-between;
+}
+
+.dflexc-jcse {
+  @include dflexcol;
+  justify-content: space-evenly;
+}
+
+
+.flexfit {
+  flex: 1;
+}
+
+.flexgrow {
+  flex: 1 0;
+}
+
+.flexshrink {
+  flex: 0 1;
+}
+
+.flexwrap-on {
+  flex-wrap: wrap;
+}
+
+.behidden {
+  display: none !important;
+}
+// =====================================================
+// global styles for common buttons
+.btn-delete {
+  background-image: $btn-bg-cancel;
+  color: black;
+  text-shadow: 1px 1px 3px white;
+
+  &:hover {
+    background-image: $btn-bg-cancel-highlight;
+  }
+}
+
+.btn-cancel {
+  background-color: $warning;
+
+  &:hover {
+    background-color: $notice;
+  }
+
+}

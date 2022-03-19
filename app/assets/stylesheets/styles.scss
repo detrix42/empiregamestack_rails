@@ -1,0 +1,93 @@
+@import 'global_classes';
+@import 'colors';
+
+body {
+  display: grid;
+
+  position: relative;
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  background-image: image_url('Ironhedge_bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  z-index: 0;
+  //height: 2000px;
+}
+
+header {
+  margin: 10px 0;
+  background-color: rgba(16,18,19,0.8);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.root-panel {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left-col right-col";
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 215px 1fr;
+  grid-template-rows: 25px 25px;
+
+  grid-template-areas: 'image title'
+                       'image desc';
+  grid-area: left-col;
+
+  align-items: center;
+  width: 90%;
+  height: 50px;
+  background-color: rgba(9,19,8,0.60);
+
+  border: 1px solid darkgoldenrod;
+  border-radius: 5px;
+  padding: 5px;
+
+  &:hover {
+    background-color: rgba(9,19,8,0.80);
+  }
+}
+
+.card-image {
+  width: 200px;
+  height: 50px;
+  background-color: #393720;
+  border-radius: 5px;
+  margin: auto 5px;
+
+}
+
+.card-title,
+.card-desc {
+  font-size: 24px;
+}
+
+.card-title {
+  grid-area: title;
+  color: #4effea;
+}
+
+.card-desc {
+  grid-area: desc;
+  color: #c8cb91;
+  font-size: .8em;
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    width: 90%;
+  }
+}
+
+
+

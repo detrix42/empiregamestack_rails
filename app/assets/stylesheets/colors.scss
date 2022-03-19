@@ -1,0 +1,77 @@
+// main palette
+$success-lt: #d3facf;
+$success: #6bd86b;
+$bg-success: #225322;
+
+
+$error: #ff0000;
+$danger: $error;
+$bg-error: #8c0009;
+$bdr-error: #ffb3cb;
+$warning: goldenrod;
+$notice: #f6d00b;
+
+
+
+$header1: #9b905d;
+$header3: #bf8f00;
+$header6: #e6d73b;
+
+$text-lt: lightgrey;
+
+$bg-brn-t70: rgba(41, 40, 28, 0.7);
+$bg-dkgrn-t70: rgb(32, 45, 29);
+
+$bdr-med-grn-yellow: #757a53;
+
+$bg-white-t30: rgba(255, 255, 255, 0.30);
+$bg-white-t50: rgba(255, 255, 255, 0.50);
+
+
+$bg-black-t10: rgba(0, 0, 0, 0.10);
+$bg-black-t60: rgba(0, 0, 0, 0.60);
+$bg-black-t70: rgba(0, 0, 0, 0.70);
+$bg-dk: #000000;
+$bg-md: grey;
+$bg-lt: lightgrey;
+
+$fg-dk: #393720;
+$fg-md: $header3;
+$fg-lt: #d7b71d;
+
+// navbar
+$navbar-bg: $bg-dk;
+$navbar-bg-lt: $bg-md;
+
+$navbar-txt-lt: white;
+$navbar-txt: $fg-lt;
+$navbar-txt-drk: #7d7c7c;
+
+// user register
+$userreg-bg: slategray;
+
+$userreg-txt: black;
+
+$btn-bg-highlight: linear-gradient(white 0%, $bg-lt 20%, $bg-md 50%, $bg-md 80%, black 100%);
+
+$btn-bg-cancel: linear-gradient(white 0%, $bdr-error 10%, $bg-error 30%, $bg-error 90%, black 100%);
+
+$btn-bg-cancel-highlight: linear-gradient(white 0%, $bdr-error 10%, $danger 30%, $bg-error 90%, black 100%);
+
+$btn-bg-disabled: linear-gradient(lightgray 0%, gray 20%, $bg-md 50%, $bg-md 80%, black 100%);
+$btn-fg-disabled: $bg-md;
+
+$btn-bg-save: linear-gradient(lightgray 0%, $success-lt 10%, $bg-success 30%, $bg-success 80%, black 100%);
+
+$btn-bg-save-highlight: linear-gradient(lightgray 0%, $success 10%, $success 30%, $bg-success 90%, black 100%);
+
+$btn-white-shadow: 1px 1px 1px white;
+// user profile
+
+$userprofile-bg: $bg-md;
+$userprofile-bg-lt: $bg-lt;
+$userprofile-bg-drk: $bg-dk;
+
+$userprofile-txt: $fg-md;
+$userprofile-txt-lt: $fg-lt;
+$userprofile-txt-drk: $fg-dk;
