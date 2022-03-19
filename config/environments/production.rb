@@ -93,7 +93,7 @@ Rails.application.configure do
 
   # Allow requests from subdomains like `www.product.com` and
   # `beta1.product.com`.
-  Rails.application.config.hosts << /.*\.empiregamestack\.com/
   Rails.application.config.hosts << "empiregamestack.com"
+  Rails.application.config.hosts << ".empiregamestack.com"
 
 end
