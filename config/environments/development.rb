@@ -70,5 +70,4 @@ Rails.application.configure do
 
   Rails.application.config.hosts << "empiregamestack.com"
   Rails.application.config.hosts << ".empiregamestack.com"
-  puts Rails.application.config.hosts.inspect
 end
