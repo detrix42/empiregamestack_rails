@@ -1,7 +1,8 @@
 import { Controller } from "@hotwired/stimulus"
+import BaseService from "../services/base_service"
 
 export default class extends Controller {
   connect() {
-    this.element.textContent = "Hello World!"
+    window['baseService'] = new BaseService();
   }
 }
